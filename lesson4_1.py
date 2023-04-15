@@ -1,8 +1,1 @@
-import time
-from w1thermsensor import W1ThermSensor
-sensor = W1thermsensor()
-
-while True:
-    temperature = sensor.get_temperature()
-    print("The temperature is %s celsius" % temperature)
-    
+from ds18b20 import DS18B20
